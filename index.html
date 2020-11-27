@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>Kalkulačka na kryptoměny</h1>
+    <form action="./" method="post">
+      <div class="form-group">
+        <label for="noc">Množství</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Mnozstvi"
+          name="Mnozstvi"
+        />
+      </div>
+      <div class="form-group">
+        <label for="kryptomena">Kryptoměna</label>
+        <select id="kryptomena" class="form-control" name="kryptomena">
+          <option selected>BTC</option>
+          <option>LTC</option>
+          <option>XMR</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mena">Měna</label>
+        <select id="mena" class="form-control" name="mena">
+          <option selected>EUR</option>
+          <option>ČZK</option>
+          <option>USD</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Převeď!</button>
+    </form>
+  </body>
+</html>
